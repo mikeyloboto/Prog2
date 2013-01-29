@@ -1,6 +1,7 @@
 //Dmitrii Kondratev
 //COSC-1337
 //Programming Assignment 2, problem 1
+#include "stdafx.h"
 #include <iostream>
 #include <string>
 using namespace std;
@@ -114,6 +115,7 @@ void searchByID()
         {
             outputResult(extraCounter, i);
             emptyResult = false;
+			extraCounter++;
         }         
     }
     if (emptyResult)
@@ -135,6 +137,7 @@ void searchByLastName()
         {
             outputResult(extraCounter, i);
             emptyResult = false;
+			extraCounter++;
         }         
     }
     if (emptyResult)
@@ -155,6 +158,7 @@ void searchByHourlyPay()
         {
             outputResult(extraCounter, i);
             emptyResult = false;
+			extraCounter++;
         }         
     }
     if (emptyResult)
