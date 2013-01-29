@@ -22,6 +22,7 @@ int main()
     return 0;    
 }
 
+//performing all necessary checks to be sure that detail number is valid
 bool checkValidity(char par1[])
 {
     bool var1 = (par1[0]=='A') || (par1[0]=='B') || (par1[0]=='C');
@@ -35,6 +36,7 @@ bool checkValidity(char par1[])
     return (var1 && var2 && var3 && var4 && var5 && var6);
 }
 
+//checks if the par1 is between par2(lowest) and par3(highest)
 bool isNumInRange(int par1, int par2, int par3)
 {
     bool ret = false;
