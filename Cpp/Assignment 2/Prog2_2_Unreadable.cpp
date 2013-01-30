@@ -15,7 +15,6 @@ for (int i = 0; i<5; i++) !isdigit(b[i]) ? valid2 = true : cout << "";
 int checkVal;
 cout << endl << "Enter check digit: ";
 cin >> checkVal;
-((10-((((((a[1]*1)+(a[3]*1))+((b[0]*1)+(b[2]*1)+(b[4]*1)))*3)+((a[0]*1)+(a[2]*1)+(a[4]*1))+((b[1]*1)+(b[3]*1)))%10))==checkVal) ? cout << endl << endl << "Code is valid" << endl : cout << endl << endl << "Code is invalid" << endl;
+10-((((((a[1]*1)+(a[3]*1))+((b[0]*1)+(b[2]*1)+(b[4]*1)))*3)+((a[0]*1)+(a[2]*1)+(a[4]*1))+((b[1]*1)+(b[3]*1)))%10==checkVal) ? cout << endl << endl << "Code is valid" << endl : cout << endl << endl << "Code is invalid" << endl;
 system("PAUSE");
 return 0;}
-
