@@ -1,6 +1,9 @@
+//COSC 1337.51 Spring 2013
 //Dmitrii Kondratev
-//COSC-1337
-//Programming Assignment 2, Extra Credit
+//1/29/2013
+//Assignment 2, Extra Credit
+//Program to search employee from the list by ID, last name or pay rate.
+//Also it can sort and output list of employeeeees sorted by ID, last name or pay rate.
 
 //You may remove next line to run it in DevCpp
 //VS12 needs this import.
