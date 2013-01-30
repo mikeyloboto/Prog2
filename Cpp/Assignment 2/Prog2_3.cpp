@@ -1,6 +1,8 @@
+//COSC 1337.51 Spring 2013
 //Dmitrii Kondratev
-//COSC-1337
-//Programming Assignment 2, problem 3
+//1/29/2013
+//Assignment 2, Program 3
+//Program to check validity of entered detail serial number.
 
 #include <stdio.h>
 #include <stdlib.h>
