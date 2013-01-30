@@ -1,7 +1,8 @@
+//COSC 1337.51 Spring 2013
 //Dmitrii Kondratev
-//COSC-1337
-//Programming Assignment 2, problem 2
-
+//1/29/2013
+//Assignment 2, Program 2
+//Program to check validity of the barcode.
 #include <stdio.h>
 #include <stdlib.h>
 #include <iostream.h>
@@ -61,8 +62,6 @@ int main(){
             cout << "Please, check the correctness of input data and try again" << endl;                      
         }
     }
-    manCod = (ManufactCode[0]*10000)+(ManufactCode[1]*1000)+(ManufactCode[2]*100)+(ManufactCode[3]*10)+(ManufactCode[4]*1);
-    prodCod = (ProductCode[0]*10000)+(ProductCode[1]*1000)+(ProductCode[2]*100)+(ProductCode[3]*10)+(ProductCode[4]*1);
     
     cout << endl << "Enter check digit: ";
     cin >> checkVal;
