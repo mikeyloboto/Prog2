@@ -5,7 +5,7 @@
 //You may remove next line to run it in DevCpp
 //VS12 needs this import.
 //And DevCpp doesn't have a normal debugger.
-#include "stdafx.h"
+//#include "stdafx.h"
 #include <iostream>
 #include <string>
 using namespace std;
@@ -131,6 +131,7 @@ void startSort(int par1)
 				}
 			}
 		cout << "Done" << endl;
+		outAll();
 		break;
 		case 2:
 		for (int j = 1; j < EMPLOYEESNUMBER; j++)
@@ -144,7 +145,8 @@ void startSort(int par1)
 				}
 			}
 		cout << "Done" << endl;
-		break;
+		outAll();
+        break;
 		case 3:
 		for (int j = 1; j < EMPLOYEESNUMBER; j++)
 			for (int i = 1; i < EMPLOYEESNUMBER; i++)
@@ -157,6 +159,7 @@ void startSort(int par1)
 				}
 			}
 		cout << "Done" << endl;
+		outAll();
 		break;
 
 	}
