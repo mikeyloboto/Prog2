@@ -5,7 +5,7 @@
 //You may remove next line to run it in DevCpp
 //VS12 needs this import.
 //And DevCpp doesn't have a normal debugger.
-//#include "stdafx.h"
+#include "stdafx.h"
 #include <iostream>
 #include <string>
 using namespace std;
