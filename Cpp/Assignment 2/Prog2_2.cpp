@@ -12,8 +12,6 @@ int extrNum(char[], int);
 //function extracts one digit from number
 //first int - input number, second int - number of digit from the right side
 //starting with 1 (example: 54321)
-int powerTen(int);
-//power of ten
 int checkVal = 0;
 int checkSum = 0;
 int calculateCheckSum(long long int);
@@ -80,15 +78,6 @@ int main(){
 int extrNum(char par1[], int par2)
 {
     return (par1[par2-1]*1);    
-}
-int powerTen(int par1)
-{
-    int varFP1 = 1;
-    for (int i = 1; i <=par1; i++)
-    {
-        varFP1 = varFP1*10; 
-    }
-    return varFP1;
 }
 
 int calculateCheckSum(long long int par1)
