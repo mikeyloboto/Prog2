@@ -1,7 +1,9 @@
+//COSC 1337.51 Spring 2013
 //Dmitrii Kondratev
-//COSC-1337
-//Programming Assignment 2, problem 1
-#include "stdafx.h"
+//1/29/2013
+//Assignment 2, Program 1
+//Program to search employee out of the list by ID, last name or pay rate.
+//#include "stdafx.h"
 #include <iostream>
 #include <string>
 using namespace std;
