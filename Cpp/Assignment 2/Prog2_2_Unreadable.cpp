@@ -1,4 +1,3 @@
-#include <stdlib.h>
 #include <iostream.h>
 char a[6],b[6];
 bool c=true;
