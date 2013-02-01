@@ -32,7 +32,7 @@ struct Employee
 Employee EmplArr[EMPLOYEESNUMBER];
 Employee Temp;
 void initEmployeesAll();
-void initEmployee(int, int, string, string, float);
+void initEmployee(int, int, char[], char[], float);
 
 char var1 = 'y';
 bool var2 = (var1=='y');
