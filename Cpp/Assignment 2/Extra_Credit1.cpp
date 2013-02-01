@@ -23,8 +23,8 @@ const int EMPLOYEESNUMBER = 5;
 struct Employee
 {
 	int ID;
-	string FirstName;
-	string LastName;
+	char FirstName[20];
+	char LastName[20];
 	float PayRate;
 };
 
@@ -140,12 +140,15 @@ void startSort(int par1)
 		for (int j = 1; j < EMPLOYEESNUMBER; j++)
 			for (int i = 1; i < EMPLOYEESNUMBER; i++)
 			{
-				if (EmplArr[i-1].LastName > EmplArr[i].LastName)
+				int cmp = strcmp(EmplArr[i-1]).LastName, EmplArr[i].LastName);
+				bool var1 = (cmp>0);
+				var1 ? 
 				{
 					Temp = EmplArr[i-1];
 					EmplArr[i-1] = EmplArr[i];
 					EmplArr[i] = Temp;
-				}
+				} : cout << "";
+				
 			}
 		cout << "Done" << endl;
 		outAll();
@@ -168,7 +171,7 @@ void startSort(int par1)
 	}
 }
 //Adds employee to array
-void initEmployee(int par1, int par2, string par3, string par4, float par5)
+void initEmployee(int par1, int par2, char par3[], char par4[], float par5)
 {
 //par1 - number of employee in array + 1, so they start with 1
 //par2 - Employee ID
