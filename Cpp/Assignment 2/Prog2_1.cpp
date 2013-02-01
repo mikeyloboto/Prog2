@@ -15,8 +15,8 @@ const int EMPLOYEESNUMBER = 5;
 struct Employee
 {
 	int ID;
-	string FirstName;
-	string LastName;
+	char FirstName[20];
+	char LastName[20];
 	float PayRate;
 };
 
@@ -24,7 +24,7 @@ struct Employee
 Employee EmplArr[EMPLOYEESNUMBER];
 
 void initEmployeesAll();
-void initEmployee(int, int, string, string, float);
+void initEmployee(int, int, char[], char[], float);
 
 char var1 = 'y';
 bool var2 = (var1=='y');
@@ -58,7 +58,7 @@ int main()
 	return 0;
 }
 
-void initEmployee(int par1, int par2, string par3, string par4, float par5)
+void initEmployee(int par1, int par2, char par3[], char par4[], float par5)
 {
 //par1 - number of employee in array + 1, so they start with 1
 //par2 - Employee ID
@@ -135,7 +135,7 @@ void searchByLastName()
     cout << "Employees found:" << endl;
     for (int i = 0; i < EMPLOYEESNUMBER; i++)
     {
-        if (EmplArr[i].LastName == nam)
+        if (strcmp(EmplArr[i].LastName, nam)==0)
         {
             outputResult(extraCounter, i);
             emptyResult = false;
